@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Design</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">LOGO</div>
+      <div>
+        <ul class="nav-links">
+          <!-- <li><a href="#">LOGO</a></li> -->
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">ABOUT US</a></li>
+          <li><a href="#">CONTACT US</a></li>
+          <li><a href="">LOGIN</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">LOGO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="" onclick="toggleMenu()">HOME</a></li>
+          <li><a href="" onclick="toggleMenu()">ABOUT US</a></li>
+          <li><a href="" onclick="toggleMenu()">CONTACT US</a></li>
+          <li><a href="" onclick="toggleMenu()">LOGIN</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <main class="main">
+      <section class="section section--row">
+        <div class="image-section">
+          <div class="image-section__image">
+            <img
+              src="./assets/img1.jpg"
+              alt="Image description"
+              class="image-section__img"
+            />
+            <div class="image-section__text">
+              <div class="text-container">
+                <span class="text-container__span">H1</span>
+                <hr class="text-container__hr" />
+                <span class="text-container__span">H2</span>
+              </div>
+              <div class="text-container">
+                <span class="text-container__span">ANY TEXT</span>
+                <hr class="text-container__hr" />
+                <span class="text-container__span">ANY TEXT</span>
+              </div>
+              <button class="image-section__button">BUTTON</button>
+            </div>
+          </div>
+          <aside class="image-section__aside">
+            <div class="image-section__aside-text">ANY TEXT</div>
+            <div class="image-section__aside-text">ANY TEXT</div>
+            <div class="image-section__aside-text">ANY TEXT</div>
+            <div class="image-section__aside-text">ANY TEXT</div>
+            <div class="image-section__aside-text">ANY TEXT</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section section--row-one">
+        <div class="icon">ICON</div>
+        <div class="grid-container">
+          <div class="grid-item grid-item--one">H1</div>
+          <div class="grid-item grid-item--two">Any Heading</div>
+          <div class="grid-item grid-item--three">H2</div>
+          <div class="grid-item grid-item--four">Text</div>
+        </div>
+
+        <div class="grid-container">
+          <div class="grid-item grid-item--one">H1</div>
+          <div class="grid-item grid-item--two">Any Heading</div>
+          <div class="grid-item grid-item--three">H2</div>
+          <div class="grid-item grid-item--four">Text</div>
+        </div>
+        <div class="grid-container">
+          <div class="grid-item grid-item--one">H1</div>
+          <div class="grid-item grid-item--two">Any Heading</div>
+          <div class="grid-item grid-item--three">H2</div>
+          <div class="grid-item grid-item--four">Text</div>
+        </div>
+      </section>
+
+      <section class="section section--row-two">
+        <div class="grid-container-two">
+          <button type="button" class="collapsible">
+            HEAD <span class="arrow">&#9660;</span>
+          </button>
+          <div class="content">
+            <div class="grid-item-two">
+              TEXT<br />
+              <button class="grid-item-two__button">BUTTON</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container-two">
+          <button type="button" class="collapsible">
+            HEAD<span class="arrow">&#9660;</span>
+          </button>
+          <div class="content">
+            <div class="grid-item-two">
+              TEXT<br />
+              <button class="grid-item-two__button">BUTTON</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid-container-two">
+          <button type="button" class="collapsible">
+            HEAD<span class="arrow">&#9660;</span>
+          </button>
+          <div class="content">
+            <div class="grid-item-two">
+              TEXT<br />
+              <button class="grid-item-two__button">BUTTON</button>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container-two">
+          <button type="button" class="collapsible">
+            HEAD<span class="arrow">&#9660;</span>
+          </button>
+          <div class="content">
+            <div class="grid-item-two">
+              TEXT<br />
+              <button class="grid-item-two__button">BUTTON</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contact-us">
+        <h2 class="footer__heading">CONTACT US</h2>
+        <p class="footer__text">COMPANY:</p>
+        <p class="footer__text">CONTACT US:</p>
+        <p class="footer__text">ADDRESS:</p>
+      </div>
+      <div class="footer__send-inquiry">
+        <h2 class="footer__heading">SEND INQUIRY</h2>
+        <form class="footer__form">
+          <label for="name" class="footer__label">NAME</label>
+          <input type="text" id="name" name="name" class="footer__input" />
+          <label for="email" class="footer__label">EMAIL</label>
+          <input type="email" id="email" name="email" class="footer__input" />
+          <label for="message" class="footer__label">MESSAGE</label>
+          <textarea
+            id="message"
+            name="message"
+            class="footer__textarea"
+          ></textarea>
+          <button type="submit" class="footer__button">SEND</button>
+        </form>
+      </div>
+    </footer>
+    <div class="copyright">
+      <p class="copyright__text">COPYRIGHT @ COMPANY 2024</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

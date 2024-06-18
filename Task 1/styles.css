@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  margin: auto;
+}
+
+.h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.input-group {
+  margin-bottom: 1.5rem;
+}
+
+.input-group span {
+  display: flex;
+  align-items: baseline;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+.input-group .icon {
+  font-size: 1rem;
+  color: #ccc;
+  margin-right: 0.5rem;
+}
+
+.input-group .toggle-password {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #ccc;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #9b59b6, #71b7e6);
+}
+
+.link {
+  text-decoration: none;
+  color: #4d4e4f;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.social-icon img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  /* .input-group input {
+    padding: 0.75rem 0.75rem 0.75rem 2rem;
+  }
+
+  .button {
+    padding: 0.75rem 1rem;
+  }
+
+  .h2 {
+    font-size: 1.75rem;
+  }
+
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  } */
+}
+
+@media screen and (max-width: 767px) {
+  .input-group input {
+    padding: 0.75rem 0.75rem 0.75rem 1.5rem;
+  }
+
+  .button {
+    padding: 0.75rem 0.75rem;
+  }
+
+  .h2 {
+    font-size: 1.5rem;
+  }
+
+  .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .input-group p {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .input-group input {
+    padding: 0.5rem 0.5rem 0.5rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .button {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .h2 {
+    font-size: 1.25rem;
+  }
+
+  .social-icons img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .input-group p {
+    font-size: 0.8rem;
+  }
+}

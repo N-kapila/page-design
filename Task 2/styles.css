@@ -188,8 +188,22 @@ a:hover {
 }
 
 .image-section__button {
-  height: calc(100%-20px);
   align-self: stretch;
+  background-color: #373738;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.image-section__button:hover {
+  background-color: #131313;
+}
+
+.image-section__button:focus {
+  outline: none;
 }
 
 .image-section__aside {
@@ -378,8 +392,23 @@ a:hover {
 
 .footer__button {
   align-self: center;
-  padding: 5px 10px;
+  padding: 10px 20px;
   margin: 5px;
+  background-color: #373738;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.footer__button:hover {
+  background-color: #131313;
+}
+
+.footer__button:focus {
+  outline: none;
 }
 
 .copyright {
@@ -397,6 +426,11 @@ a:hover {
   #hamburger-nav {
     display: flex;
   }
+
+  .menu-links {
+    margin-top: 3rem;
+  }
+
   .image-section {
     flex-direction: column;
   }
